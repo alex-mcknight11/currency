@@ -37,7 +37,6 @@ $(document).ready(function () {
   console.log(document.querySelector('#currencyInfo'))
   $("#currencyInfo").click(function () {
     console.log('click');
-    // let USD = $("#USD").val();
     let userCurrency = $("#secondEntry").val();
     clearFields();
     getExchangeRate("USD", userCurrency);
