@@ -5,8 +5,10 @@
 <body>
   <div class="container">
     <br>
+    <h1>Currency X-Change</h1>
+    <br>
     <label for="amount">Enter Amount in USD: </label>
-    <input id="amount" type="number" value="1" min="1" />
+    <input id="amount" type="number" value="1" min="1" maxlength="5"/>
     <datalist id="currencies">
     </datalist>
     <br>
@@ -26,9 +28,12 @@
       <option>NTW</option>
       <option>ZAR</option>
       <option>AUD</option>
+      <option>MOP</option>
+      <option>MXN</option>
+      <option>VND</option>
     </select>
   <br />
-  <button type="button" class="btn btn-primary" id="currencyInfo">Enter</button>
+  <button type="button" class="btn btn-success" id="currencyInfo">Enter</button>
   <br>
 </form>
 <br />
@@ -38,5 +43,6 @@
 <br />
 <h6><span class="error"></span></h6>
 </div>
+<a href="https://www.youtube.com/watch?v=ULeDlxa3gyc">loadsamoney</a>
 </body>
 </html>
