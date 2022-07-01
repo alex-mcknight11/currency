@@ -4,6 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Currency from './currency.js';
 
+
+function clearFields() {
+  $(".display").text("");
+  $(".ammount").text("");
+  $(".error").text("");
+}
+
 function displayExchangeRate(q, rate) {
-  $(".exchangeOutput").text(`The exchange rate from USD to ${q} is ${rate}.`);
+  $(".exchangeOutput").text(`The exchange rate from USD to ${secondCurrency} is ${rate}.`);
 }
