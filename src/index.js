@@ -3,7 +3,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Currency from './currency.js';
-console.log(process.env.API_KEY);
 
 function clearFields() {
   $(".display").text("");
@@ -29,14 +28,11 @@ function getElements(response) {
 
 async function getExchangeRate(USD, secondCurrency) {
   const response = await Currency.getCurrency(USD,secondCurrency);
-  console.log(response);
   getElements(response, USD, secondCurrency);
 }
 
 $(document).ready(function () {
-  console.log(document.querySelector('#currencyInfo'))
   $("#currencyInfo").click(function () {
-    console.log('click');
     let userCurrency = $("#secondEntry").val();
     clearFields();
     getExchangeRate("USD", userCurrency);
