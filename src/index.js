@@ -27,15 +27,8 @@ function getElements(response) {
   }
 }
 
-function displayExchangeRate(q, rate) {
-  $(".exchangeOutput").text(`The exchange rate from USD to ${secondCurrency} is ${rate}.`);
-}
-
 async function getExchangeRate(USD, secondCurrency) {
-  const response = await ExchangeRate.getCurrency(
-    USD,
-    secondCurrency
-  );
+  const response = await Currency.getCurrency(USD,secondCurrency);
   getElements(response, USD, secondCurrency);
 }
 
