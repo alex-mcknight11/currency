@@ -42,7 +42,7 @@ async function getExchangeRate(USD, secondCurrency) {
 $(document).ready(function () {
   $("#currencyInfo").click(function () {
     let userUSD = $("#USDentry").val();
-    let userCurrency = $("#seconndEntry").val();
+    let userCurrency = $("#secondEntry").val();
     clearFields();
     getExchangeRate(userUSD, userCurrency);
   });
