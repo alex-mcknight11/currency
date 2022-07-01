@@ -5,9 +5,20 @@
 <body>
   <div class="container">
     <label for="USDselect">Enter ammount of Currency in USD</label>
-    <input list="currencies" name="currency" id="currencyAuto" type="text">
+    <input list="currencies" name="currency" type="text">
     <datalist id="currencies">
     </datalist>
+    <br>
+    <select class="form-control" id="secondEntry">
+      <option>HKD</option>
+      <option>CAD</option>
+      <option>EUR</option>
+      <option>CNY</option>
+      <option>GBP</option>
+      <option>KRW</option>
+      <option>SGD</option>
+      <option>SEK</option>
+    </select>
     <button class="btn-secondary" id="currencyInfo">Enter</button>
   </div>
   <div class="showErrors"></div>
